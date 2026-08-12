@@ -55,17 +55,20 @@ export function PrimaryButton({
   children,
   className = "",
   external,
+  onClick,
 }: {
   href: string;
   children: ReactNode;
   className?: string;
   external?: boolean;
+  onClick?: () => void;
 }) {
   const props = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
     <Link
       href={href}
       {...props}
+      onClick={onClick}
       className={`focus-ring group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-500 to-cyan-glow px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_-10px_rgba(33,102,240,0.65)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-8px_rgba(33,102,240,0.75)] active:translate-y-0 ${className}`}
     >
       {children}

@@ -27,8 +27,10 @@ export function Header() {
     };
   }, [open]);
 
+  const closeMenu = () => setOpen(false);
+
   return (
-    <header className="sticky top-0 z-40 overflow-hidden border-b border-line/40 bg-ink/95 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-line/40 bg-ink/95 backdrop-blur-xl">
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -38,9 +40,9 @@ export function Header() {
         aria-hidden="true"
       />
 
-      <Container className="relative grid grid-cols-[auto_1fr_auto] items-center gap-4 py-3 sm:py-4 lg:py-4">
+      <Container className="relative grid grid-cols-[auto_1fr_auto] items-center gap-3 py-2.5 sm:gap-4 sm:py-3.5 lg:py-4">
         <Link href="/" className="focus-ring shrink-0 justify-self-start rounded-lg" aria-label="Buy Best IPTV — Home">
-          <Logo className="h-16 w-auto sm:h-20 lg:h-24" priority />
+          <Logo className="h-11 w-auto sm:h-16 lg:h-24" priority />
         </Link>
 
         <nav className="hidden items-center justify-center gap-1 lg:flex" aria-label="Primary">
@@ -76,17 +78,31 @@ export function Header() {
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label={open ? "Close menu" : "Open menu"}
-            className="focus-ring inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-line text-ice lg:hidden"
+            className="focus-ring inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-line text-ice sm:h-11 sm:w-11 lg:hidden"
           >
             {open ? <CloseIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
           </button>
         </div>
       </Container>
 
+      {/*
+        Mobile nav backdrop + drawer. Both are `absolute`, anchored to this `header`
+        (a sticky positioning context) with `top-full`, so they always start exactly
+        at the header's real rendered bottom edge — no hardcoded height guesses —
+        and being out of normal flow, they can never push or overlap page content.
+      */}
+      <div
+        onClick={closeMenu}
+        aria-hidden="true"
+        className={`absolute inset-x-0 top-full h-[100dvh] bg-ink/70 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+          open ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      />
+
       <div
         id="mobile-nav"
-        className={`relative overflow-hidden border-t border-line/40 bg-ink-soft transition-[max-height,opacity] duration-300 ease-out lg:hidden ${
-          open ? "max-h-[26rem] opacity-100" : "pointer-events-none max-h-0 opacity-0"
+        className={`absolute inset-x-0 top-full z-10 max-h-[calc(100dvh-5rem)] overflow-y-auto border-b border-line/40 bg-ink-soft shadow-2xl transition-all duration-300 ease-out lg:hidden ${
+          open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"
         }`}
       >
         <Container className="flex flex-col gap-1 py-4">
@@ -96,6 +112,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                onClick={closeMenu}
                 aria-current={active ? "page" : undefined}
                 className={`focus-ring rounded-lg px-3 py-3 text-base font-medium ${
                   active
@@ -107,7 +124,7 @@ export function Header() {
               </Link>
             );
           })}
-          <PrimaryButton href="/pricing" className="mt-2 w-full">
+          <PrimaryButton href="/pricing" className="mt-2 w-full" onClick={closeMenu}>
             View Pricing
           </PrimaryButton>
         </Container>

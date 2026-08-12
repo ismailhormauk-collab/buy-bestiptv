@@ -26,7 +26,10 @@ export function FloatingContact() {
   }, []);
 
   return (
-    <div ref={rootRef} className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3 sm:bottom-7 sm:right-7">
+    <div
+      ref={rootRef}
+      className="pointer-events-none fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3 sm:bottom-7 sm:right-7"
+    >
       <div
         role="menu"
         aria-label="Contact options"
@@ -67,7 +70,7 @@ export function FloatingContact() {
         aria-haspopup="menu"
         aria-expanded={open}
         aria-label={open ? "Close contact menu" : "Open contact menu"}
-        className="focus-ring flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-cyan-glow text-white shadow-[0_14px_34px_-8px_rgba(33,102,240,0.75)] transition-transform duration-200 hover:scale-105 active:scale-95"
+        className="focus-ring pointer-events-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-cyan-glow text-white shadow-[0_14px_34px_-8px_rgba(33,102,240,0.75)] transition-transform duration-200 hover:scale-105 active:scale-95"
       >
         <span className="relative flex h-6 w-6 items-center justify-center">
           <ChatIcon
