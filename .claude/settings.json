@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR>=4284 && NR<=4400 && /conclusion:|faq:/{print NR\": \"$0}' lib/blog.ts)"
+    ]
+  }
+}

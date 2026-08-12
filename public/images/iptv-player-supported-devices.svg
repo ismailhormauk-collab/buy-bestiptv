@@ -1,0 +1,49 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a smart TV, streaming box, laptop and phone all running the same IPTV player interface">
+  <defs>
+    <linearGradient id="dg1" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#141c34"/>
+      <stop offset="1" stop-color="#080c18"/>
+    </linearGradient>
+    <linearGradient id="dg2" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#468cff"/>
+      <stop offset="1" stop-color="#37d3f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#dg1)"/>
+
+  <!-- TV -->
+  <rect x="52" y="70" width="230" height="150" rx="10" fill="#0c1324" stroke="#22304f" stroke-width="1.5"/>
+  <rect x="66" y="84" width="202" height="106" rx="4" fill="#101a30"/>
+  <rect x="66" y="84" width="100" height="106" rx="4" fill="url(#dg2)" opacity="0.35"/>
+  <circle cx="116" cy="137" r="18" fill="#0a0f1e" stroke="url(#dg2)" stroke-width="2"/>
+  <path d="M110 128l16 9-16 9v-18Z" fill="url(#dg2)"/>
+  <rect x="147" y="220" width="40" height="10" rx="5" fill="#1a2338"/>
+  <rect x="120" y="230" width="94" height="8" rx="4" fill="#0c1324"/>
+
+  <!-- streaming box -->
+  <rect x="330" y="176" width="56" height="18" rx="5" fill="#101a30" stroke="#22304f" stroke-width="1.2"/>
+  <circle cx="378" cy="185" r="3" fill="#37d3f0"/>
+
+  <!-- laptop -->
+  <path d="M400 150h150v90H400z" fill="#0c1324" stroke="#22304f" stroke-width="1.5"/>
+  <rect x="410" y="160" width="130" height="70" rx="3" fill="#101a30"/>
+  <rect x="410" y="160" width="60" height="70" rx="3" fill="url(#dg2)" opacity="0.3"/>
+  <path d="M382 240h186l14 22H368l14-22Z" fill="#0e1526" stroke="#22304f" stroke-width="1.2"/>
+  <rect x="420" y="176" width="46" height="8" rx="4" fill="#28344f"/>
+  <rect x="480" y="176" width="46" height="8" rx="4" fill="#28344f"/>
+  <rect x="420" y="196" width="46" height="8" rx="4" fill="#28344f"/>
+  <rect x="480" y="196" width="46" height="8" rx="4" fill="#28344f"/>
+
+  <!-- phone -->
+  <rect x="560" y="86" width="66" height="140" rx="12" fill="#0c1324" stroke="#22304f" stroke-width="1.5"/>
+  <rect x="568" y="100" width="50" height="112" rx="4" fill="#101a30"/>
+  <rect x="568" y="100" width="50" height="46" rx="4" fill="url(#dg2)" opacity="0.35"/>
+  <circle cx="593" cy="123" r="10" fill="#0a0f1e" stroke="url(#dg2)" stroke-width="1.6"/>
+  <path d="M589 118l9 5-9 5v-10Z" fill="url(#dg2)"/>
+  <rect x="574" y="156" width="38" height="6" rx="3" fill="#1c2540"/>
+  <rect x="574" y="168" width="30" height="6" rx="3" fill="#1c2540"/>
+  <rect x="574" y="180" width="34" height="6" rx="3" fill="#1c2540"/>
+
+  <!-- connective glow line -->
+  <path d="M170 235 C 260 280, 470 280, 590 235" stroke="url(#dg2)" stroke-width="1.5" stroke-dasharray="3 7" fill="none" opacity="0.6"/>
+</svg>

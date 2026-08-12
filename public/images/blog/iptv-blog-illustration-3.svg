@@ -1,0 +1,42 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract illustration of a program guide grid">
+  <defs>
+    <linearGradient id="t3g" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#151f3a"/>
+      <stop offset="1" stop-color="#080c18"/>
+    </linearGradient>
+    <linearGradient id="t3line" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#468cff"/>
+      <stop offset="1" stop-color="#37d3f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#t3g)"/>
+  <g transform="translate(90,80)">
+    <rect x="0" y="0" width="620" height="290" rx="12" fill="#0c1324" stroke="#22304f" stroke-width="1.5"/>
+    <rect x="0" y="0" width="620" height="44" rx="12" fill="#101a30"/>
+    <rect x="20" y="16" width="90" height="12" rx="6" fill="url(#t3line)"/>
+    <g stroke="#1d2740">
+      <line x1="0" y1="100" x2="620" y2="100"/>
+      <line x1="0" y1="156" x2="620" y2="156"/>
+      <line x1="0" y1="212" x2="620" y2="212"/>
+      <line x1="155" y1="44" x2="155" y2="290"/>
+      <line x1="310" y1="44" x2="310" y2="290"/>
+      <line x1="465" y1="44" x2="465" y2="290"/>
+    </g>
+    <rect x="20" y="62" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="175" y="62" width="110" height="26" rx="6" fill="#132043" stroke="#2166f0" stroke-width="1.2"/>
+    <rect x="330" y="62" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="485" y="62" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="20" y="118" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="175" y="118" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="330" y="118" width="110" height="26" rx="6" fill="#132043" stroke="#2166f0" stroke-width="1.2"/>
+    <rect x="485" y="118" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="20" y="174" width="110" height="26" rx="6" fill="#132043" stroke="#2166f0" stroke-width="1.2"/>
+    <rect x="175" y="174" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="330" y="174" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="485" y="174" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="20" y="230" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="175" y="230" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="330" y="230" width="110" height="26" rx="6" fill="#16233d"/>
+    <rect x="485" y="230" width="110" height="26" rx="6" fill="#132043" stroke="#2166f0" stroke-width="1.2"/>
+  </g>
+</svg>

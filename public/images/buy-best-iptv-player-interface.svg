@@ -1,0 +1,68 @@
+<svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of the Buy Best IPTV player interface showing a playlist and video preview">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="640" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a2440"/>
+      <stop offset="1" stop-color="#0a0f1e"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#468cff"/>
+      <stop offset="1" stop-color="#37d3f0"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2166f0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2166f0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="480" rx="28" fill="url(#g1)"/>
+  <circle cx="500" cy="90" r="120" fill="url(#g3)" filter="url(#soft)"/>
+
+  <!-- browser / app frame -->
+  <rect x="48" y="56" width="544" height="368" rx="18" fill="#0c1324" stroke="#1d2740" stroke-width="1.5"/>
+  <rect x="48" y="56" width="544" height="44" rx="18" fill="#101830"/>
+  <circle cx="76" cy="78" r="5" fill="#3a4668"/>
+  <circle cx="94" cy="78" r="5" fill="#3a4668"/>
+  <circle cx="112" cy="78" r="5" fill="#3a4668"/>
+  <rect x="150" y="70" width="220" height="16" rx="8" fill="#161f38"/>
+
+  <!-- sidebar playlist -->
+  <rect x="64" y="116" width="150" height="292" rx="12" fill="#0e1526"/>
+  <rect x="80" y="134" width="118" height="10" rx="5" fill="url(#g2)"/>
+  <g fill="#1a2338">
+    <rect x="80" y="160" width="118" height="30" rx="8"/>
+    <rect x="80" y="198" width="118" height="30" rx="8" fill="#16233d" stroke="#2166f0" stroke-width="1.2"/>
+    <rect x="80" y="236" width="118" height="30" rx="8"/>
+    <rect x="80" y="274" width="118" height="30" rx="8"/>
+    <rect x="80" y="312" width="118" height="30" rx="8"/>
+    <rect x="80" y="350" width="118" height="30" rx="8"/>
+  </g>
+  <rect x="92" y="207" width="70" height="12" rx="6" fill="#7ab0ff"/>
+  <rect x="92" y="169" width="80" height="12" rx="6" fill="#28324e"/>
+  <rect x="92" y="245" width="60" height="12" rx="6" fill="#28324e"/>
+  <rect x="92" y="283" width="90" height="12" rx="6" fill="#28324e"/>
+  <rect x="92" y="321" width="50" height="12" rx="6" fill="#28324e"/>
+  <rect x="92" y="359" width="75" height="12" rx="6" fill="#28324e"/>
+
+  <!-- main preview -->
+  <rect x="232" y="116" width="360" height="202" rx="14" fill="#0a0f1e" stroke="#22304f" stroke-width="1.5"/>
+  <rect x="232" y="116" width="360" height="202" rx="14" fill="url(#g3)" opacity="0.5"/>
+  <circle cx="412" cy="217" r="34" fill="#0c1324" stroke="url(#g2)" stroke-width="2.5"/>
+  <path d="M402 202l26 15-26 15v-30Z" fill="url(#g2)"/>
+  <rect x="248" y="292" width="328" height="6" rx="3" fill="#1e2944"/>
+  <rect x="248" y="292" width="150" height="6" rx="3" fill="url(#g2)"/>
+
+  <!-- info row -->
+  <rect x="232" y="332" width="170" height="14" rx="7" fill="#1c2540"/>
+  <rect x="232" y="354" width="260" height="10" rx="5" fill="#161e35"/>
+  <rect x="232" y="372" width="200" height="10" rx="5" fill="#161e35"/>
+
+  <!-- guide chips -->
+  <g>
+    <rect x="416" y="332" width="176" height="30" rx="15" fill="#101a30" stroke="#2b3a5c" stroke-width="1"/>
+    <circle cx="434" cy="347" r="5" fill="#37d3f0"/>
+    <rect x="446" y="342" width="120" height="10" rx="5" fill="#28344f"/>
+  </g>
+</svg>

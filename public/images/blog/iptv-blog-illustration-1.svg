@@ -1,0 +1,23 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract illustration of a streaming signal waveform">
+  <defs>
+    <linearGradient id="t1g" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16213e"/>
+      <stop offset="1" stop-color="#080c18"/>
+    </linearGradient>
+    <linearGradient id="t1line" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#468cff"/>
+      <stop offset="1" stop-color="#37d3f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#t1g)"/>
+  <g opacity="0.35" stroke="#22304f">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+  </g>
+  <path d="M0 300 C 100 220, 160 340, 240 260 C 320 180, 380 320, 460 240 C 540 160, 600 300, 680 220 C 730 170, 770 210, 800 190" stroke="url(#t1line)" stroke-width="4" fill="none" opacity="0.9"/>
+  <path d="M0 340 C 120 280, 200 380, 300 320 C 400 260, 460 360, 560 300 C 640 250, 720 320, 800 280" stroke="#2166f0" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <circle cx="400" cy="225" r="52" fill="#0a0f1e" stroke="url(#t1line)" stroke-width="2.5" opacity="0.95"/>
+  <path d="M386 205l34 20-34 20v-40Z" fill="url(#t1line)"/>
+</svg>
