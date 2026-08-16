@@ -9,7 +9,7 @@ const VALID_DIMENSIONS: SearchAnalyticsDimension[] = ["query", "page", "country"
  * GET /api/search-console/analytics?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD&dimensions=query,page&rowLimit=100
  *
  * Returns Search Analytics (clicks, impressions, CTR, position) for
- * https://buy-bestiptv.com/ over the given date range. Admin-only.
+ * https://www.buy-bestiptv.com/ over the given date range. Admin-only.
  */
 export async function GET(request: Request) {
   if (!isAuthorizedAdminRequest(request)) return unauthorizedResponse();

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Buy Best IPTV",
   shortName: "Buy Best IPTV",
   domain: "buy-bestiptv.com",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://buy-bestiptv.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.buy-bestiptv.com",
   tagline: "Premium IPTV player software for your streaming setup",
   description:
     "Buy Best IPTV offers premium IPTV player software with M3U playlist support, EPG guides, multi-device compatibility and dedicated setup support. Software only — bring your own legally licensed content.",

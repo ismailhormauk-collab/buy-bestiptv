@@ -5,10 +5,10 @@ import { siteConfig } from "@/lib/site";
 export const runtime = "nodejs";
 
 /**
- * GET /api/search-console/inspect?url=https://buy-bestiptv.com/some-page
+ * GET /api/search-console/inspect?url=https://www.buy-bestiptv.com/some-page
  *
  * Reports Google's current indexing status for a single URL on this site.
- * Restricted to https://buy-bestiptv.com/* URLs only. This reports status —
+ * Restricted to https://www.buy-bestiptv.com/* URLs only. This reports status —
  * it does NOT request or guarantee indexing of the URL. Admin-only.
  */
 export async function GET(request: Request) {
