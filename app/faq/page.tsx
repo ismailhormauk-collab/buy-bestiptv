@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
   openGraph: {
     url: "/faq",
+    type: "website",
     title: "FAQ — Buy Best IPTV Questions Answered",
     description:
       "Answers to common questions about Buy Best IPTV software, playlists, EPG, supported devices, pricing and legal use.",

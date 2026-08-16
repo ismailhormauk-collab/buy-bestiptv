@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/installation" },
   openGraph: {
     url: "/installation",
+    type: "website",
     title: "Installation Guide — Set Up Your IPTV Player",
     description:
       "Step-by-step installation instructions for the Buy Best IPTV player on Android, iOS, Fire TV, smart TVs, Windows and macOS, plus playlist and EPG setup.",

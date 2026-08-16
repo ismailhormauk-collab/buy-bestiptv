@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   openGraph: {
     url: "/contact",
+    type: "website",
     title: "Contact — Get Help from Our Support Team",
     description:
       "Reach the Buy Best IPTV support team on WhatsApp or Telegram for plan questions, installation help, or general support.",

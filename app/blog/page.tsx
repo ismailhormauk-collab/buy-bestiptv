@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
   openGraph: {
     url: "/blog",
+    type: "website",
     title: "IPTV Blog — Guides on Encoders, Playlists & Providers",
     description:
       "50+ in-depth guides for IPTV buyers: encoders, HDMI/SDI setup, playlists, EPG, provider evaluation and device compatibility from the Buy Best IPTV team.",

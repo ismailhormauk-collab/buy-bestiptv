@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/pricing" },
   openGraph: {
     url: "/pricing",
+    type: "website",
     title: "Pricing — Buy Best IPTV Software Plans",
     description:
       "Compare Buy Best IPTV software plans: 1 month (€20), 3 months (€35), 6 months (€45) and 12 months (€65). Software and setup support only.",

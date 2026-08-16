@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/features" },
   openGraph: {
     url: "/features",
+    type: "website",
     title: "Features — Everything Inside the IPTV Player",
     description:
       "Explore every Buy Best IPTV feature: M3U & Xtream playlist support, EPG guide, multi-device compatibility, HD/4K playback, favorites, parental controls and more.",

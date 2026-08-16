@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
+    type: "website",
     title: "Buy Best IPTV Software for Your Streaming Setup",
     description:
       "Buy best IPTV player software with M3U playlist support, EPG guides, favorites and hands-on installation help across every major device.",
