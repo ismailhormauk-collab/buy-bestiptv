@@ -5,6 +5,12 @@ import "server-only";
  * routes. This project has no broader auth system to reuse — this is
  * intentionally the smallest thing that works: a bearer token compared
  * against ADMIN_API_SECRET (server-side only env var).
+ *
+ * Callers must target https://www.buy-bestiptv.com directly. The apex
+ * domain 308-redirects here, and many HTTP clients (curl -L, some fetch
+ * implementations) drop the Authorization header when a redirect crosses
+ * to a different host — hitting the apex domain will silently produce a
+ * misleading 401 even with a correct secret.
  */
 export function isAuthorizedAdminRequest(request: Request): boolean {
   const secret = process.env.ADMIN_API_SECRET;
